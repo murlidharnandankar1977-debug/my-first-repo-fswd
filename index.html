@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Full Stack Web Development Course</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Full Stack Web Development Course</h1>
+    </header>
+
+    <!-- Image Section -->
+    <div class="course-image">
+        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475" alt="Full Stack Web Development">
+        <div class="image-text">Full Stack Web Development</div>
+    </div>
+
+    <main>
+        <section id="welcome">
+            <h2>WELCOME TO FSWD COURSE</h2>
+            <p>
+                This full stack web development course is designed for beginners and professionals.<br>
+                It helps learners understand how modern websites and applications work.<br>
+                You will start with basic HTML and CSS concepts.<br>
+                JavaScript will be used to make websites interactive.<br>
+                Backend technologies are explained in a simple manner.<br>
+                You will learn how servers and databases work together.<br>
+                Real-world projects are included for better practice.<br>
+                Industry-relevant tools and frameworks are covered.<br>
+                This course improves problem-solving skills.<br>
+                By the end, you will be job-ready as a full stack developer.
+            </p>
+        </section>
+
+        <section id="course-review">
+            <h2>Course Review</h2>
+            <p>This course covers the basics of frontend and backend development, including HTML, CSS, JavaScript, Node.js, and more.</p>
+        </section>
+
+        <section id="backend-development">
+            <h2>Backend Development</h2>
+            <p>This section covers the basics of backend development, including Node.js, Express.js, and MongoDB.</p>
+        </section>
+
+        <section id="registration-form">
+            <h2>Registration Form</h2>
+            <form id="registration-form">
+                <label>Full Name:</label>
+                <input type="text" id="name" placeholder="Enter your name">
+
+                <label>Email:</label>
+                <input type="email" id="email" placeholder="Enter your email">
+
+                <label>Password:</label>
+                <input type="password" id="password" placeholder="Enter password">
+
+                <label>Course:</label>
+                <select id="course">
+                    <option>Frontend</option>
+                    <option>Backend</option>
+                    <option>Full Stack</option>
+                </select>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <script>
+        document.getElementById('registration-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Registration successful!');
+        });
+    </script>
+
+</body>
+</html>
